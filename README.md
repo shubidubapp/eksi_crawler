@@ -5,21 +5,27 @@ usage: eksi_crawler.py [-h] [-st START] [-sp STOP] [-o OUTPUT] [-tc THREAD_COUNT
 optional arguments:
 
   * -h, --help
+  
   show this help message and exit
       
   * -st START, --start START
+  
   Starting entry number for crawler. (included) Default:1 
       
   * -sp STOP, --stop STOP
+  
   Stopping entry number for crawler. (not included) Default: 1 000 000 000 
       
   * -o OUTPUT, --output OUTPUT
+  
   Output file name. Default: eksi_crawler_out.txt
       
   * -tc THREAD_COUNT, --thread-count
+  
   THREAD_COUNT Limit the amount of threads created. Default: 4
       
   * -c CONTINUE_TO_FILE, --continue-to-file CONTINUE_TO_FILE
+  
   Continue with the stated file from last index outputs to that file.
                         
                         
