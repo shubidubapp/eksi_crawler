@@ -18,6 +18,7 @@ def continue_index(filename):
         return int(last_line[0])
     except:
         print("Ups. There has been a problem with continue file. Please fix this shit.")
+        sys.exit(-1)
 
 
 class AsyncGenerator:
