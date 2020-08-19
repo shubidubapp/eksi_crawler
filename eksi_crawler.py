@@ -81,7 +81,7 @@ class EksiCrawler:
         entry = await self.get_page(url, session)
         if entry is not None:
             # print(entry)
-            async with aiofiles.open(self.file, "a") as f:
+            async with aiofiles.open(self.file, "a", encoding="utf-8") as f:
                 await f.write("{{\"{}\":\"{}\"}}\n".format(str(index), entry.strip()))
             return True
         return False
